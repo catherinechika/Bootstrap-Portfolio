@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
-    
+   
     .Portfolio{
         Position: absolute;
         right: 300px;
@@ -33,7 +33,6 @@
         Position: relative;
         right: -220px;
         color: #dfa856;
-        /* color: white; */
         height: 40px;
         margin-top:0;
         border-right: 6px solid #6b1706e3;
@@ -42,12 +41,8 @@
         padding-left: 20px;
     }
     
-    .photo{
-        object-fit: cover;
-        width: 300px;
-        height: 300px;
-    }
-    .container{
+  
+ .container{
         border: 3px dashed #6b1706e3;
         padding: 30px;
         width: 960px;
@@ -56,94 +51,79 @@
         padding-right: 70px;
         background:url(assets/images/OG22sl0.jpg);
     }
-    
-    .card-deck{
-        background-color: none ;
-        /* width: 350px; */
-    
-    }
-    .card{
-        background-color:transparent;
-        width: 400px;
-    }
-    .label{
-        color: #dfa856;
-        /* border: 3px dotted gold; */
-        width: 300px;
-        background: #17181a;
-        text-align: center;
-        border-right: 6px solid #f9cb6e;
-        border-left: 6px solid #f9cb6e;
-        
-    }
-    img {
-   /* margin: 40px; */
-   border:6px solid #f9cb6e;
-   /* background-color:#f9cb6e;  */
-}
 body{
     background-image: url(assets/images/fancy-cushion.png);
 }
-
-.menu{
-background-color: #400b00;
-}
+    .photo{
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        margin-right: 30px;
+        margin-left: 30px;
+        position: relative;
+    }
+    
+    .label{
+        text-align: center;
+        background-color: aqua;
+        margin-right: 30px;
+        margin-left: 30px;
+        width: 200px;
+        position: relative;
+        bottom: 20px; 
+    }
+    
+   
 </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg ">
           
-        <a class="navbar-brand myname" href="#">Chika Achukwu</a>
-        <button class="navbar-toggler items menu" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse  " id="navbarNav">
-          <ul class="navbar-nav menu">
-            <li class="nav-item active">
-              <a class="nav-link About" href="#">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link Portfolio" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link Contact" href="#">Contact</a>
-            </li>
-        </ul>
-        </div>
-      </nav>
+                <a class="navbar-brand myname" href="#">Chika Achukwu</a>
+                <button class="navbar-toggler items menu" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  " id="navbarNav">
+                  <ul class="navbar-nav menu">
+                    <li class="nav-item active">
+                      <a class="nav-link About" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link Portfolio" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link Contact" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                </div>
+              </nav>
 
 
       <div class="container">
-        
-        <div class="card-deck">
+          <div class="row">
+              <h1>Porfolio</h1>
+          </div>
 
-            <div class="card">
-                <a href="https://www.aeckomirageinc.com/">
-                    <img class="aecko photo" src="assets/images/Aecko Mirage Logo.png" alt="Aecko" > 
-                    <div class="aeckolabel label">Official AECKO Mirage Inc.</div> 
+
+          <div class="row">
+              <div class="col-3 photo">
+                <a href="https://www.aeckomirageinc.com"><img class="aecko photo" src="assets/images/Aecko Mirage Logo.png" alt="Aecko"
+                    href="https://www.aeckomirageinc.com/">
+                    <div class="aeckolabel label">AECKO Mirage Inc.</div>
+                </a>
+            </div>
+              <div class="col-3 photo">
+                <a href="https://www.catherinechika.com/"><img class="tiger photo" src="assets/images/Catherine Chika Tigers 3.JPG" alt="Catherine Chika" href="https://www.catherinechika.com/">
+                    <div class="tigerlabel label ">Catherine Chika</div>
                 </a>
             </div>
 
-
-            <div class="card">
-                 <a href="https://www.catherinechika.com/">
-                    <img class="tiger photo" src="assets/images/Catherine Chika Tigers 3.JPG" alt="Catherine Chika" >
-                     <div class="tigerlabel label">Official Website for Catherine Chika</div>
-                 </a>
+              <div class="col-3 photo">
+                <a href="https://catherinechika.github.io/Basic-Portfolio//"><img class="tiger photo" src="assets/images/headshot.jpeg" alt="Head shot" href="https://catherinechika.github.io/Basic-Portfolio//">
+                    <div class="headlabel label"> Basic Portfolio</div>
+                </a>
             </div>
-
-
-             <div class="card">
-                        <a href="https://catherinechika.github.io/Basic-Portfolio//">
-                            <img class="tiger photo" src="assets/images/headshot.jpeg" alt="Head shot" >
-                           <div class="headlabel label">Basic Portfolio</div>
-                        </a>
-                </div>
-        </div>     
-               
+          </div>
       </div>
-      
-
-      
 </body>
 </html>
