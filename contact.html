@@ -44,7 +44,7 @@
         padding-left: 20px;
     }
     
- .container{
+ .bodycontainer{
         border: 3px dashed #6b1706e3;
         padding: 30px;
         width: 960px;
@@ -69,10 +69,16 @@ body{
 h1{
     color: white;
 }
+html{
+            height: 100vh;
+}
+footer{
+       text-align: center;
+   }
    
 </style>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
         <nav class="navbar navbar-expand-lg ">
           
                 <a class="navbar-brand myname" href="#">Chika Achukwu</a>
@@ -92,33 +98,43 @@ h1{
                     </li>
                 </ul>
                 </div>
-              </nav>
+        </nav>
 
-              <div class="container">
-                  <div>
-                      <h1>Contact</h1>
-                  </div>
-                    <form>
 
-                            <div class="form-group">
-                                <label class="msglabel" for="exampleInputName1">Name</label>
-                                <input type="Name" class="form-control" id="exampleInputName" placeholder="Enter Name">
-                            </div>
+ <div class="container bodycontainer flex-shrink-0">
+          <div class="row">
+              <h1>Contact</h1>
+          </div>
 
-                            <div class="form-group">
-                                <label  class="msglabel" for="exampleInputEmail1">Email Address</label>
-                                <div class="msglabel"><input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email"></div>
-                                <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> -->
-                            </div>
 
-                            <div class="form-group  ">
-                                <label class = "msglabel" for="exampleInputMessage1">Message</label>
-                                <div class="msgbox"><input type="Message" class="form-control msgbox " id="exampleInputMessage1" placeholder=" Enter Message"></div>
-                            </div>
+     <div class="row">
+        <p>
+                  <form class="form">
+                    Name<br>
+                 <input class="fname" type="text" name="firstname" placeholder="John Smith"><br>
+                    Email:<br>
+                 <input class="lname" type="text" name="lastname" placeholder="example@gmail.com"><br>
+                    Message:<br>
+                 <input class="msg" type="text" name="message"><br>
+            
+                 <input class="submit" type="submit" value="Submit">
+                 </form>
+            </p>
+    </div>
+</div>
 
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
+      
+
+    <footer class = "footer mt-auto py-3"> >
+            
+            <div class="container footercont">
+                <span class="text-muted">
+                      Created by Catherine Chika
+                </span>
+          </div>
+    </footer>
+
+
 </body>
 </html>
 
